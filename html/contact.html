@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../../style/reset.css" />
+        <link rel="stylesheet" href="../../style/style.css" />
+        <script src="../js/weather.js" type="module"></script>
+        <title>Djupviks Hamn - Kontakt</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <nav>
+                <ul>
+                    <li><a id="home" href="/">Djupviks Hamn</a></li>
+                    <div class="dropdown">
+                        <a href="#">Besökare</a>
+                            <div class="dropdown-content">
+                                <a href="visitor/guest.html">Gästplatser</a>
+                                <a href="visitor/tourist.html">Turistmål</a>
+                                <a href="visitor/history.html">Historia</a>
+                            </div>
+                        </div>
+                    <li><a href="members.html">Medlemmar</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                    <li><a href="english.html">English</a></li>
+                </ul>
+            </nav>
+
+            <header class="no-image">
+                <div class="weather"></div>
+            </header>
+
+            <main>
+                <section>
+                    <h1>Kontakta Oss</h1>
+                    <div class="container">
+                        <div class="content">
+                            <form action="contact.html" method="GET">
+                                <fieldset>
+                                    <legend>Fyll i Kontaktformulär</legend>
+                                    <p>Vad gäller ditt ärende?</p>
+                                    <p>
+                                        <ul>
+                                            <li><label><input type="radio" name="form-topic" value="boat"> Båtplats </label></li>
+                                            <li><label><input type="radio" name="form-topic" value="member"> Medlem </label></li>
+                                            <li><label><input type="radio" name="form-topic" value="other"> Övrigt </label></li>
+                                        </ul>
+                                    </p>
+                                    <p>
+                                        <label for="Topic">Rubrik*:</label>
+                                        <input
+                                            type="text"
+                                            name="topic"
+                                            id="Topic"
+                                            placeholder="Rubrik"
+                                            required
+                                        />
+                                    </p>
+
+                                    <p>
+                                        <label for="Desc">Beskrivning*:</label>
+                                        <textarea
+                                            name="desc"
+                                            id="Desc"
+                                            cols="30"
+                                            rows="5"
+                                            placeholder="Beskriv ditt ärende"
+                                        ></textarea>
+                                    </p>
+
+                                    <p>
+                                        <label for="Email">Email*:</label>
+                                        <input type="email" name="email" id="Email" placeholder="mail@domän.se" required>
+                                    </p>
+                                    <p>
+                                        <label for="Phone">Telefon:</label>
+                                        <input type="tel" name="phone" id="Phone" placeholder="Telefonnummer">
+                                    </p>
+
+                                    <p>Hur vill du bli kontaktad?</p>
+                                    <p>
+                                        <ul>
+                                            <li><label><input type="radio" name="form-reply" value="mail"> Email </label></li>
+                                            <li><label><input type="radio" name="form-reply" value="phone"> Telefon </label></li>
+                                            <li><label><input type="radio" name="form-reply" value="none"> Inte alls </label></li>
+                                        </ul>
+                                    </p>
+
+                                    <p>
+                                        <input type="submit" value="Skicka">
+                                    </p>
+                                    <p class="explainer">Tack för att du kontaktar oss!</p>
+                                </fieldset>
+                            </form>
+                        </div>
+                        <div class="image">
+                            <img src="../images/D-8.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="contact-box">
+                        <p>
+                            Hamnfogde Bo Lautin, mobil
+                            <span>0707-920310</span>
+                        </p>
+                        <ul>
+                            <li>Djupviks hamnförening</li>
+                            <li>c/o Ekholm</li>
+                            <li>Eksta Hägur 170</li>
+                            <li>623 54 Klintehamn</li>
+                        </ul>
+                        </div>
+                </section>
+            </main>
+
+            <footer>
+                <p>Copyright <span>&copy;</span> 2021 Djupvikshamn.se</p>
+                <p>info@djupvikshamn.se</p>
+            </footer>
+        </div>
+    </body>
+</html>
