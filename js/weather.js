@@ -10,7 +10,7 @@ function onLoad(event) {
 
 function printTemp(temp) {
     let weatherDisplay = document.createElement('p');
-    console.dir(document.location)
+
     if (document.location.pathname === "/html/english.html") {
         weatherDisplay.innerHTML = `Djupvik Right Now: <span>${temp}°C</span>`
     } else {

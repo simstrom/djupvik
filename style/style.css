@@ -50,7 +50,7 @@ main {
 }
 
 main {
-    margin-bottom: 3rem;
+    margin: 3rem auto;
 }
 
 img {
@@ -133,8 +133,7 @@ nav ul {
     align-items: center;
 }
 
-nav ul li,
-.dropdown {
+nav ul li {
     padding: 1.5rem 0;
     margin-left: 3rem;
 }
@@ -219,10 +218,6 @@ header p {
     margin: 0;
 }
 
-main {
-    margin-top: 3rem;
-}
-
 .container {
     margin: 3rem 0;
 }
@@ -257,6 +252,10 @@ main {
     order: 1;
 }
 
+/*  =============
+    components 
+    =============*/
+
 .contact-box {
     padding: 2rem;
     border-radius: 10px;
@@ -280,7 +279,7 @@ form ul {
 }
 
 form ul li {
-    margin-right: 2rem;
+    margin: 0 2rem 1rem 0;
 }
 
 input[type='text'],
@@ -366,6 +365,7 @@ tr:nth-child(even) {
     font-weight: normal;
 }
 
+/* FOOTER STYLES */
 footer {
     background-color: rgba(18, 35, 46, 0.1);
     color: var(--dark-blue-alt);
